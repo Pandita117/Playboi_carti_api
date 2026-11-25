@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('album_id') ->constrained('albums')->restrictOnDelete();
             $table->string('duration');
             $table->text('lyrics')->nullable();
+            $table->foreignId('album_id') ->constrained('albums')->restrictOnDelete();
             $table->timestamps();
             
         });
