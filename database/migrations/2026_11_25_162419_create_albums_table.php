@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('long');
             $table->text('description')->nullable();
             $table->timestamps();
+            
         });
     }
 
