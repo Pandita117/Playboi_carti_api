@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class AlbumController extends Controller
 {
-     public function readAll()
+    public function readAll()
     {
         $albums = Album::all();
         return response()->json($albums);
