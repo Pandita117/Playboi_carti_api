@@ -31,7 +31,7 @@ class SongController extends Controller
         ]);
 
         $song = Song::create($data);
-        return response()->json($song->load('albums'), 201);
+        return response()->json($song->load('album'), 201);
     }
 
     public function update(Request $request, $id)
